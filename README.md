@@ -17,12 +17,13 @@ A few things to note:
 - Multiple key-value pairs are separated by commas which form a list of pairs. You will see this within the .sav file. Whenever a key-value pair has a comma at the end, it marks a new pair after it that becomes part of a list inside whatever container (brackets/braces) it is in. You can have lists inside containers inside lists inside containers and so on to infinity or the limit of your computer's storage space.
 
 Certain parts of the file are not entirely definable, so for this guide I will do my best to show you everything I know.
-"avatar" - Selects what the character looks like. There are 4 values you can choose from. Further in the repo there will be a chart with each avatar and what number to use to select them.
-"inventory" - You're gonna work with this one A LOT. This includes EVERYTHING in your inventory, including clothing, weapons, items, and the extra backpack space at the bottom. Lower in this file we will talk about breaking apart the inventory key values as it can be confusing at first.
-"position" - This will decide your position in the world. I have not yet seen it be 100% accurate, but it places you roughly in the right area.
-"seen_intro" - A true/false or boolean value that decides whether or not you've seen the welcome message/intro.
-"tokens" - Important one if you want to use the in-game store which appears before you spawn in. Any positive integer should work, I have not encountered an error in number size yet. This determines how many coins, gold, money, whatever you have for the shop.
-"unlocked_items" - Some items are hidden from the store unless you defeat special dinosaurs. If you have this it completely bypasses that.
-"world" - This includes several different world settings, such as time of day and weather.
-"world_map" - This defines various map settings like where you've explored and what settlements you've found.
-"xp" - XP is your Level and is important for the in-game shop as certain items and weapons are locked out if you aren't a certain level.
+
+- "avatar" - Selects what the character looks like. There are 4 values you can choose from. Further in the repo there will be a chart with each avatar and what number to use to select them.
+- "inventory" - You're gonna work with this one A LOT. This includes EVERYTHING in your inventory, including clothing, weapons, items, and the extra backpack space at the bottom. Lower in this file we will talk about breaking apart the inventory key values as it can be confusing at first.
+- "position" - This will decide your position in the world. I have not yet seen it be 100% accurate, but it places you roughly in the right area.
+- "seen_intro" - A true/false or boolean value that decides whether or not you've seen the welcome message/intro.
+- "tokens" - Important one if you want to use the in-game store which appears before you spawn in. Any positive integer should work, I have not encountered an error in number size yet. This determines how many coins, gold, money, whatever you have for the shop.
+- "unlocked_items" - Some items are hidden from the store unless you defeat special dinosaurs. If you have this it completely bypasses that.
+- "world" - This includes several different world settings, such as time of day and weather.
+- "world_map" - This defines various map settings like where you've explored and what settlements you've found.
+- "xp" - XP is your Level and is important for the in-game shop as certain items and weapons are locked out if you aren't a certain level.

@@ -10,7 +10,7 @@
     "seen_intro":true,
     "tokens":1000000000,
     "unlocked_items":[1008,1009,1010,1016,1017,1019],
-    "world":{"severity":1.0,"time_of_day":20.40002632141113,"weather_time":87400.52343750},
+    "world":{"time_of_day":20.40002632141113,"weather_time":87400.52343750},
     "world_map":null,
     "xp":1252061.3750
 }

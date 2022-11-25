@@ -6,9 +6,11 @@ I am currently aware that theHunter: Primal is no longer active and has been aba
 A foreword; I am unaware if theHunter: Primal is accessible outside of Steam or available outside of Windows. This guide will direct you to the location of the save file through Steam and Windows directories. If for whatever reason you have the game elsewhere and want to use the guide, I would suggest finding a different guide to help you determine the location of the save file in your directory. Then, feel free to come back here as the steps to build your own file should be the same.
 
 Step #1: Find the directory
+
 Open your file explorer and find the hard drive your OS is located on. The most common folder you will find what you are looking for in is your C: drive. Once you have entered into that hard drive folder then follow the path from Program Files (x86) to the Steam folder, then find the "userdata" folder. Next step is to find the folder named after your Steam account ID. An easy way to find your ID is to go into the Steam program and go to the add friends page. Your Friend Code is the same as your account ID. Once you have found the correct folder, find theHunter: Primal's directory. It should be named 322920 as that is the ID for the game. Enter the "remote" folder inside and there you go; you should be looking at a nice, shiny "tHPsave.sav" file. If you aren't, try loading the game and playing for a few moments to create a new file if there isn't one already inside.
 
 Step #2: Identify the parts of the file
+
 Open up this file in whatever text editor you prefer (Notepad, Visual Studio Code, Sublime, Atom, doesn't matter as long as it can open text files). What you'll be met with is compressed JSON code which looks like a wall of text or one giant line if you have word wrap disabled. That's ok. It is not as complex as it appears at first.
 
 A few things to note:
@@ -31,6 +33,7 @@ Certain parts of the file are not entirely definable, so for this guide I will d
 - "xp" - XP is your Level and is important for the in-game shop as certain items and weapons are locked out if you aren't a certain level.
 
 Step #3: Create and edit!
+
 There is a save file in the folder "base" that you can use to build your save file. Feel free to copy the code into your own save inside the file path I mentioned earlier. It uses the first avatar, some random coordinates, and an inventory with one improvised machete and a map fragment. Of course, this is not a very interesting save file. Let's learn how to fix that.
 
 Inventory:
@@ -48,6 +51,8 @@ Everything inside of the [] array is the value of the key "inventory". Inside th
 - "health" - How much of an item you have. -2 is the default "one item" value for non-stackable items. You can use any number between and including 1 to whatever positive integer you choose for items that can stack (such as map fragments, ammo, health canisters, or arrows).
 - "item_id" - This is what determines the item you are adding to your inventory. In this guide I have a compherensive list of every in-game item and their item ids. If you mistype this value the item will not return how you want it to, so be mindful of typos.
 - "slot" - This value determines where in your inventory items will go. There are 18 unique slots, including weapons, ammo, scopes, items, clothes, and the extra bottom box.
+
+The file id_list.pdf details a list of all items and slots with corresponding IDs you can use.
 
 Getting the syntax right on this file is extremely important and sometimes it might be easy to miss a comma or a quotation mark. In most cases the game will either throw an error or fail to read your save file and throw you a completely new game. If this happens, just read through and try and see if there's something you've missed.
 
@@ -88,6 +93,7 @@ XP:
 Your level in-game for the store. The value in the base file is 1252061.3750 which will give you a Lvl 50 save, however I do not know if that is the minimum requirement for Lvl 50.
 
 Step #4: Exporting and playing
+
 If you're done with your save file, you can now get ready to play. You have two options from here: you can make the save file writable by the game (which may get overwritten and reset, so save a backup just in case) or you can make the file read-only which completely prevents the game from writing over it, meaning everytime you load the game you will have the same original file. If you want to make it read-only, right click on the file and select Properties. It should be the first page at the bottom (if not, search around the Properties window as it should be in there).
 
 Once you have done whatever you need to with your file, you can exit the window and load your game. Start up a new session and if everything worked with no errors, you should have a beautiful new save file completely hand-crafted by you!

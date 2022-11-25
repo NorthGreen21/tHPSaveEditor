@@ -1,7 +1,14 @@
 # tHPSaveEditor
 If you would like to edit your own theHunter: Primal save this is the place for you.
 
-I am currently aware that theHunter: Primal is no longer active and has been abandoned due to various issues and loss in player base. That being said, before the game was discontinued the company producing it made it so that save files were editable to get around a bug that deleted saves of players. The code for a tHP save file is quite simple; in this file I will provide a guide for creating your own save file and will have references for each item.
+Table of contents - tHPsave.sav files are labelled by the folder they're in -- the reason for this is so that you can copy the file without renaming it:
+- avatars - This folder contains images of the avatars in-game. More info on how to add them to your save below.
+- base - Contains a save file for very easy editing.
+- maxinv - Contains a save file with every important item/weapon, max camo clothing, and full XP/Gold.
+- README.md - This file, contains the guide and table of contents you are currently reading.
+- id_list.pdf - A full list of every slot and item/weapon ID in the game. All should be accurate as I have double checked all of them and triple checked the majority of them.
+
+I know that theHunter: Primal is no longer active and has been abandoned due to various issues and loss in player base. That being said, before the game was discontinued the company producing it made it so that save files were editable to get around a bug that deleted saves of players. The code for a tHP save file is quite simple; in this file I will provide a guide for creating your own save file and will have references for each item.
 
 A foreword; I am unaware if theHunter: Primal is accessible outside of Steam or available outside of Windows. This guide will direct you to the location of the save file through Steam and Windows directories. If for whatever reason you have the game elsewhere and want to use the guide, I would suggest finding a different guide to help you determine the location of the save file in your directory. Then, feel free to come back here as the steps to build your own file should be the same.
 

@@ -1,0 +1,16 @@
+{
+    "avatar":1000000,
+    "health":3500.0,
+    "inventory":
+    [
+        {"guid":"1","health":-2,"item_id":1005,"slot":4},
+        {"guid":"2","health":1,"item_id":363,"slot":1}
+    ],
+    "position":{"x":886.4707641601563,"y":336.8293762207031,"yaw":0.9012318253517151,"z":-1681.223999023438},
+    "seen_intro":true,
+    "tokens":1000000000,
+    "unlocked_items":[1008,1009,1010,1016,1017,1019],
+    "world":{"severity":1.0,"time_of_day":20.40002632141113,"weather_time":87400.52343750},
+    "world_map":null,
+    "xp":1252061.3750
+}
